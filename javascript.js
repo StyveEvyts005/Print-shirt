@@ -59,7 +59,7 @@
       cart.forEach((item, i) => {
         cartDiv.innerHTML += `
           <div class="cart-item">
-            <span>${item.name} (${item.price} €)</span>
+            <span>${item.name} (${item.price} Ar)</span>
             <a href="#" onclick="removeFromCart(${i})">Supprimer</a>
           </div>
         `;
@@ -84,6 +84,7 @@
         window.open(`https://m.me/${MESSENGER_ID}?text=${message}`, "_blank");
       }
     }
+
 
 
     loadProducts();
