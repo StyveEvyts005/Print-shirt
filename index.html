@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ma Vitrine e-commerce</title>
+  <meta name="description" content="Boutique en ligne simple et rapide" />
+  <link rel="stylesheet" href="style.css">
+
+  </head>
+<body>
+  <header>
+    <!-- LOGO + NOM BOUTIQUE -->
+    <div class="logo-container">
+      <img src="Print-shirt.jpg" alt="Logo" id="siteLogo">
+      <h1>Print-Shirt</h1>
+    </div>
+
+   
+  </header>
+    
+       <!-- BARRE DE RECHERCHE -->
+    <div class="search-bar">
+      <div class="search-bar-center">
+      <input type="text" id="searchInput" placeholder="Rechercher un produit...">
+      </div>
+    </div>
+  <main>
+    <section class="products" id="productList">
+      <!-- Produits chargés depuis Google Sheets -->
+    </section>
+  </main>
+
+  <aside class="cart" id="cart">
+    <h2>🛒 Mon Panier</h2>
+    <div id="cartItems"></div>
+    <button onclick="sendOrder()">Commander</button>
+  </aside>
+  <script src="javascript.js"></script>
+
+  </body>
+</html>
